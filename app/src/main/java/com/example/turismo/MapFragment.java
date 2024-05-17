@@ -57,6 +57,7 @@ import com.google.android.libraries.places.widget.listener.PlaceSelectionListene
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.GeoPoint;
+import com.google.firebase.firestore.auth.User;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -156,6 +157,12 @@ public class MapFragment extends Fragment {
 
             // Set up click listener to show BottomSheet
             myMap.setOnMarkerClickListener(marker -> {
+                String s = (String) marker.getTag();
+                if (s != null && s.charAt(0) == '@') {
+                    Toast.makeText(requireContext(), "Username: " + s.substring(1), Toast.LENGTH_SHORT).show();
+                return true;
+                }
+
                 PlaceResult placeResult = (PlaceResult) marker.getTag();
                 if (placeResult != null) {
                     LocationBottomSheetFragment bottomSheet = LocationBottomSheetFragment.newInstance(placeResult.location.latitude, placeResult.location.longitude, placeResult, placesClient);
@@ -526,6 +533,7 @@ public class MapFragment extends Fragment {
             for (UserLocation userLocation : userLocations) {
                 LatLng latLng = new LatLng(userLocation.getLatitude(), userLocation.getLongitude());
                 Marker marker = myMap.addMarker(new MarkerOptions().position(latLng).title(userLocation.getUsername()));
+                marker.setTag("@" + userLocation.getUsername());
                 currentMarkers.add(marker);
             }
 

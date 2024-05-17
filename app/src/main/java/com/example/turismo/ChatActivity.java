@@ -68,7 +68,7 @@ public class ChatActivity extends AppCompatActivity implements GroupSettingsDial
             for (String memberId : members) {
                 memberNames.add(userIdToNameMap.get(memberId));
             }
-            DialogFragment dialog = GroupSettingsDialogFragment.newInstance(groupName, members, groupId);
+            DialogFragment dialog = GroupSettingsDialogFragment.newInstance(groupName, members, groupId, memberNames);
             dialog.show(getSupportFragmentManager(), "GroupSettingsDialogFragment");
         });
 

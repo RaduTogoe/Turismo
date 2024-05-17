@@ -35,7 +35,9 @@ public class GroupSettingsDialogFragment extends DialogFragment {
     private static final String ARG_GROUP_NAME = "group_name";
     private static final String ARG_MEMBERS = "members";
     private static final String ARG_GROUP_ID = "group_id";
+    private static final String ARG_MEMBER_NAME = "name";
     private String groupName;
+    private List<String> memberNames;
     private List<String> members;
     private EditText groupNameEditText;
     private TextView groupNameTextView;
@@ -56,10 +58,11 @@ public class GroupSettingsDialogFragment extends DialogFragment {
         void onShowMembersLocation(List<String> memberIds);
     }
 
-    public static GroupSettingsDialogFragment newInstance(String groupName, List<String> members, String groupId) {
+    public static GroupSettingsDialogFragment newInstance(String groupName, List<String> members, String groupId, List<String> names) {
         GroupSettingsDialogFragment fragment = new GroupSettingsDialogFragment();
         Bundle args = new Bundle();
         args.putString(ARG_GROUP_NAME, groupName);
+        args.putStringArrayList(ARG_MEMBER_NAME, new ArrayList<>(names));
         args.putStringArrayList(ARG_MEMBERS, new ArrayList<>(members));
         args.putString(ARG_GROUP_ID, groupId);
         fragment.setArguments(args);
@@ -86,6 +89,7 @@ public class GroupSettingsDialogFragment extends DialogFragment {
             groupName = getArguments().getString(ARG_GROUP_NAME);
             members = getArguments().getStringArrayList(ARG_MEMBERS);
             groupId = getArguments().getString(ARG_GROUP_ID);
+            memberNames = getArguments().getStringArrayList(ARG_MEMBER_NAME);
         }
 
         groupNameTextView = view.findViewById(R.id.groupNameTextView);
@@ -104,7 +108,7 @@ public class GroupSettingsDialogFragment extends DialogFragment {
             members = new ArrayList<>();
         }
 
-        membersAdapter = new MembersAdapter(members);
+        membersAdapter = new MembersAdapter(memberNames);
         membersRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         membersRecyclerView.setAdapter(membersAdapter);
 
