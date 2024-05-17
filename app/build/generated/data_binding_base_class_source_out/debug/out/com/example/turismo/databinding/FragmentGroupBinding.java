@@ -8,6 +8,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.turismo.R;
@@ -27,13 +28,18 @@ public final class FragmentGroupBinding implements ViewBinding {
   public final FloatingActionButton floatingActionButton;
 
   @NonNull
+  public final RecyclerView groupsRecyclerView;
+
+  @NonNull
   public final ConstraintLayout main;
 
   private FragmentGroupBinding(@NonNull ConstraintLayout rootView, @NonNull TextView emptyGroupText,
-      @NonNull FloatingActionButton floatingActionButton, @NonNull ConstraintLayout main) {
+      @NonNull FloatingActionButton floatingActionButton, @NonNull RecyclerView groupsRecyclerView,
+      @NonNull ConstraintLayout main) {
     this.rootView = rootView;
     this.emptyGroupText = emptyGroupText;
     this.floatingActionButton = floatingActionButton;
+    this.groupsRecyclerView = groupsRecyclerView;
     this.main = main;
   }
 
@@ -76,10 +82,16 @@ public final class FragmentGroupBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.groupsRecyclerView;
+      RecyclerView groupsRecyclerView = ViewBindings.findChildViewById(rootView, id);
+      if (groupsRecyclerView == null) {
+        break missingId;
+      }
+
       ConstraintLayout main = (ConstraintLayout) rootView;
 
       return new FragmentGroupBinding((ConstraintLayout) rootView, emptyGroupText,
-          floatingActionButton, main);
+          floatingActionButton, groupsRecyclerView, main);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,206 +1,242 @@
 [
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\drawable_map.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\drawable\\map.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\layout_fragment_calendar.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\layout\\fragment_calendar.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\layout_activity_map.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\layout\\activity_map.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\drawable_bg_search_view.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\drawable\\bg_search_view.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\drawable_atm.png.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\drawable\\atm.png"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\drawable_calendar.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\drawable\\calendar.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\layout_authentification_menu.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\layout\\authentification_menu.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\layout_activity_forgot_password.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\layout\\activity_forgot_password.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\drawable_message_background.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\drawable\\message_background.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\drawable_restaurant.png.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\drawable\\restaurant.png"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\anim_slide_up.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\anim\\slide_up.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\layout_activity_register.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\layout\\activity_register.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\layout_fragment_account.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\layout\\fragment_account.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\drawable_email.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\drawable\\email.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\layout_fragment_autocomplete.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\layout\\fragment_autocomplete.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\drawable_img.png.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\drawable\\img.png"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\xml\\data_extraction_rules.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\layout_item_message.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\layout\\item_message.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\layout_activity_send_email_forgot_password.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\layout\\activity_send_email_forgot_password.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\drawable_add.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\drawable\\add.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\layout_authentification_menu.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\layout\\authentification_menu.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\drawable_current_location.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\drawable\\current_location.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\layout_fragment_group.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\layout\\fragment_group.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\layout_fragment_calendar.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\layout\\fragment_calendar.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\layout_fragment_coordonates_bottom_sheet.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\layout\\fragment_coordonates_bottom_sheet.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.example.turismo.app-debug-42:/layout_fragment_group_settings_dialog.xml.flat",
+        "source": "com.example.turismo.app-main-44:/layout/fragment_group_settings_dialog.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\drawable_current_location.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\drawable\\current_location.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\layout_fragment_add_event_dialog.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\layout\\fragment_add_event_dialog.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\layout_fragment_bottom_sheet_dialog.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\layout\\fragment_bottom_sheet_dialog.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\layout_fragment_group_creation_dialog.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\layout\\fragment_group_creation_dialog.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\drawable_search.png.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\drawable\\search.png"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\drawable_map_start.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\drawable\\map_start.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\menu_main_navbar.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\menu\\main_navbar.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\layout_fragment_map.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\layout\\fragment_map.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.turismo.app-debug-41:/drawable_current_location.xml.flat",
-        "source": "com.example.turismo.app-main-43:/drawable/current_location.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\layout\\activity_register.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\layout_fragment_image.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\layout\\fragment_image.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\layout_activity_loading_screen.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\layout\\activity_loading_screen.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\anim_slide_up.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\anim\\slide_up.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\drawable_account.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\drawable\\account.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\drawable_img.png.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\drawable\\img.png"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\layout_item_member.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\layout\\item_member.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\layout_fragment_autocomplete.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\layout\\fragment_autocomplete.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\drawable_map_start.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\drawable\\map_start.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\drawable_discover.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\drawable\\discover.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\layout_fragment_map.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\layout\\fragment_map.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\layout_activity_loading_screen.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\layout\\activity_loading_screen.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\drawable_atm.png.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\drawable\\atm.png"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\layout_activity_send_email_forgot_password.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\layout\\activity_send_email_forgot_password.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\layout_image_item.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\layout\\image_item.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\drawable_restaurant.png.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\drawable\\restaurant.png"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\drawable_email.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\drawable\\email.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\layout_image_item.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\layout\\image_item.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\drawable_people.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\drawable\\people.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\drawable_map.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\drawable\\map.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\drawable_account.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\drawable\\account.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\layout_item_group.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\layout\\item_group.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\drawable_discover.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\drawable\\discover.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\layout_activity_map.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\layout\\activity_map.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\layout_item_event.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\layout\\item_event.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\layout_fragment_account.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\layout\\fragment_account.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\drawable_globe.gif.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\drawable\\globe.gif"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\layout_activity_chat.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\layout\\activity_chat.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\layout_fragment_coordonates_bottom_sheet.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\layout\\fragment_coordonates_bottom_sheet.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\drawable_globe.gif.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\drawable\\globe.gif"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\xml\\backup_rules.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\drawable_add.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\drawable\\add.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\layout_fragment_bottom_sheet_dialog.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\layout\\fragment_bottom_sheet_dialog.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\drawable_baseline_circle_24.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\drawable\\baseline_circle_24.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\layout_fragment_group.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\layout\\fragment_group.xml"
     },
     {
-        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-41:\\drawable_people.xml.flat",
-        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-43:\\drawable\\people.xml"
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\drawable_search.png.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\drawable\\search.png"
+    },
+    {
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\menu_main_navbar.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\menu\\main_navbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\layout_activity_forgot_password.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\layout\\activity_forgot_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\layout_fragment_group_settings_dialog.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\layout\\fragment_group_settings_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\drawable_calendar.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\drawable\\calendar.xml"
+    },
+    {
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\drawable_bg_search_view.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\drawable\\bg_search_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\drawable_edit_text_background.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\drawable\\edit_text_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-debug-42:\\layout_fragment_image.xml.flat",
+        "source": "C:\\Users\\rduto\\.gradle\\daemon\\8.6\\com.example.turismo.app-main-44:\\layout\\fragment_image.xml"
     }
 ]

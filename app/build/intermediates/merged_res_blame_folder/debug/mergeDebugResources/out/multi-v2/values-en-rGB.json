@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.turismo.app-mergeDebugResources-39:/values-en-rGB/values-en-rGB.xml",
+            "outputFile": "com.example.turismo.app-mergeDebugResources-40:/values-en-rGB/values-en-rGB.xml",
             "map": [
                 {
                     "source": "C:\\Users\\rduto\\.gradle\\caches\\transforms-4\\815bb380020547e318a55d8c3f840606\\transformed\\places-3.3.0\\res\\values-en-rGB\\values.xml",

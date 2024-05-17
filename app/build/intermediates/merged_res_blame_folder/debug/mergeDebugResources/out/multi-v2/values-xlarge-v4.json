@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.turismo.app-mergeDebugResources-39:/values-xlarge-v4/values-xlarge-v4.xml",
+            "outputFile": "com.example.turismo.app-mergeDebugResources-40:/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
                     "source": "C:\\Users\\rduto\\.gradle\\caches\\transforms-4\\2f898c73c0cac945d93fc662d82253b7\\transformed\\appcompat-1.6.1\\res\\values-xlarge-v4\\values-xlarge-v4.xml",

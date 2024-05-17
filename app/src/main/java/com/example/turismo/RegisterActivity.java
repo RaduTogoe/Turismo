@@ -114,7 +114,7 @@ public class RegisterActivity extends AppCompatActivity {
                             Map<String, Object> userData = new HashMap<>();
                             userData.put("username", username);
                             userData.put("email", email);
-                            userData.put("location", new GeoPoint(currentLocation.getLatitude(), currentLocation.getLongitude()));
+                            userData.put("location", String.valueOf(currentLocation.getLatitude()) + "," + String.valueOf(currentLocation.getLongitude()));
 
                             firestore.collection("users").document(userId)
                                     .set(userData)

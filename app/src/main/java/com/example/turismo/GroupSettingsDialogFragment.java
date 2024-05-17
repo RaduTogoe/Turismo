@@ -2,6 +2,7 @@ package com.example.turismo;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -23,6 +24,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.GeoPoint;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,6 +41,7 @@ public class GroupSettingsDialogFragment extends DialogFragment {
     private TextView groupNameTextView;
     private ImageButton editButton;
     private Button leaveButton;
+    private Button showMembersLocationButton;
     private RecyclerView membersRecyclerView;
     private MembersAdapter membersAdapter;
     private GroupSettingsListener listener;
@@ -49,6 +53,7 @@ public class GroupSettingsDialogFragment extends DialogFragment {
     public interface GroupSettingsListener {
         void onGroupNameChanged(String newName);
         void onLeaveGroup();
+        void onShowMembersLocation(List<String> memberIds);
     }
 
     public static GroupSettingsDialogFragment newInstance(String groupName, List<String> members, String groupId) {
@@ -87,6 +92,7 @@ public class GroupSettingsDialogFragment extends DialogFragment {
         groupNameEditText = view.findViewById(R.id.groupNameEditText);
         editButton = view.findViewById(R.id.editButton);
         leaveButton = view.findViewById(R.id.leaveButton);
+        showMembersLocationButton = view.findViewById(R.id.showLocationsButton);
         membersRecyclerView = view.findViewById(R.id.membersRecyclerView);
         addMemberEmailEditText = view.findViewById(R.id.addMemberEmailEditText);
         addMemberButton = view.findViewById(R.id.addMemberButton);
@@ -140,9 +146,73 @@ public class GroupSettingsDialogFragment extends DialogFragment {
             }
         });
 
+        showMembersLocationButton.setOnClickListener(v -> {
+            if (listener != null) {
+                listener.onShowMembersLocation(members);
+            }
+
+            // Fetch user locations and set them in LocationDataStore
+            Log.d("GroupSettingsDialog", "Fetching locations for members: " + members);
+
+            db.collection("users").get().addOnSuccessListener(queryDocumentSnapshots -> {
+                List<UserLocation> userLocations = new ArrayList<>();
+                for (QueryDocumentSnapshot document : queryDocumentSnapshots) {
+                    String userId = document.getId();
+                    if (members.contains(userId)) {
+                        String username = document.getString("username");
+                        String locationString = document.getString("location");
+
+                        Log.d("GroupSettingsDialog", "User: " + username + ", Location String: " + locationString);
+                        if (locationString != null && !locationString.isEmpty()) {
+                            try {
+                                String[] locationParts = locationString.split(",");
+                                double latitude = Double.parseDouble(locationParts[0].trim());
+                                double longitude = Double.parseDouble(locationParts[1].trim());
+                                userLocations.add(new UserLocation(username, latitude, longitude));
+                            } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
+                                Log.d("GroupSettingsDialog", "Failed to parse location for user: " + username);
+                            }
+                        } else {
+                            Log.d("GroupSettingsDialog", "Location is null or empty for user: " + username);
+                        }
+                    }
+                }
+
+                LocationDataStore.getInstance().setUserLocations(userLocations);
+                if (userLocations.isEmpty()) {
+                    Log.d("GroupSettingsDialog", "No user locations found");
+                } else {
+                    Log.d("GroupSettingsDialog", "User locations found: " + userLocations);
+                }
+
+                // Transition to MapActivity
+                Intent intent = new Intent(getActivity(), MapActivity.class);
+                startActivity(intent);
+            }).addOnFailureListener(e -> {
+                Log.e("GroupSettingsDialog", "Error fetching user locations", e);
+            });
+        });
+
+
         return view;
     }
 
+    private GeoPoint parseLocationString(String locationString) {
+        try {
+            // Remove square brackets
+            locationString = locationString.replace("[", "").replace("]", "");
+
+            // Split latitude and longitude
+            String[] parts = locationString.split(",");
+            double latitude = Double.parseDouble(parts[0].trim());
+            double longitude = Double.parseDouble(parts[1].trim());
+
+            return new GeoPoint(latitude, longitude);
+        } catch (Exception e) {
+            Log.e("GroupSettingsDialog", "Error parsing location string: " + locationString, e);
+            return null;
+        }
+    }
     private void addUserToGroupByEmail(String email) {
         if (groupId == null) {
             Toast.makeText(getContext(), "Group ID is null", Toast.LENGTH_SHORT).show();

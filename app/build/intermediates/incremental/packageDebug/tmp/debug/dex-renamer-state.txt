@@ -1,4 +1,4 @@
-#Thu May 16 20:25:46 EEST 2024
+#Fri May 17 10:26:52 EEST 2024
 base.0=C\:\\Users\\rduto\\Desktop\\proiect_colectiv\\Turismo\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\rduto\\Desktop\\proiect_colectiv\\Turismo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\rduto\\Desktop\\proiect_colectiv\\Turismo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex

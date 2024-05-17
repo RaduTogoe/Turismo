@@ -1,6 +1,7 @@
 package com.example.turismo;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
@@ -10,6 +11,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -32,7 +35,6 @@ public class ChatActivity extends AppCompatActivity implements GroupSettingsDial
     private EditText messageEditText;
     private ImageButton sendButton;
     private MessageAdapter messageAdapter;
-    private List<String> memberNames;
     private List<Message> messageList;
     private String groupName;
     private String groupId;
@@ -104,7 +106,7 @@ public class ChatActivity extends AppCompatActivity implements GroupSettingsDial
                 .addOnSuccessListener(queryDocumentSnapshots -> {
                     if (!queryDocumentSnapshots.isEmpty()) {
                         String documentId = queryDocumentSnapshots.getDocuments().get(0).getId();
-                        groupId = documentId; // Assign groupId here
+                        groupId = documentId; // Ensure groupId is set
                         db.collection("groups").document(documentId).get().addOnSuccessListener(documentSnapshot -> {
                             Group group = documentSnapshot.toObject(Group.class);
                             if (group != null) {
@@ -196,7 +198,9 @@ public class ChatActivity extends AppCompatActivity implements GroupSettingsDial
                 });
     }
 
+    @Override
     public void onShowMembersLocation(List<String> memberIds) {
+        Log.d("ChatActivity", "onShowMembersLocation called with member IDs: " + memberIds);
         db.collection("users").whereIn("id", memberIds).get().addOnSuccessListener(queryDocumentSnapshots -> {
             List<UserLocation> userLocations = new ArrayList<>();
             for (QueryDocumentSnapshot document : queryDocumentSnapshots) {
@@ -211,9 +215,12 @@ public class ChatActivity extends AppCompatActivity implements GroupSettingsDial
     }
 
     private void showMembersOnMap(List<UserLocation> userLocations) {
-        MapFragment mapFragment = (MapFragment) getSupportFragmentManager().findFragmentById(R.id.fragmentMap);
-        if (mapFragment != null) {
-            mapFragment.showMembersLocation(userLocations);
+        Log.d("ChatActivity", "showMembersOnMap called with user locations: " + userLocations);
+        Fragment mapFragment = getSupportFragmentManager().findFragmentById(R.id.fragmentMap);
+        if (mapFragment instanceof MapFragment) {
+            ((MapFragment) mapFragment).showMembersLocation(userLocations);
+        } else {
+            Log.e("ChatActivity", "MapFragment not found or not an instance of MapFragment");
         }
     }
 }

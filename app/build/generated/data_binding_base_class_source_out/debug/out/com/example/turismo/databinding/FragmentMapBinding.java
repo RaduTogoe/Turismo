@@ -29,12 +29,17 @@ public final class FragmentMapBinding implements ViewBinding {
   @NonNull
   public final FloatingActionButton fabRestaurant;
 
+  @NonNull
+  public final RelativeLayout fragmentMap;
+
   private FragmentMapBinding(@NonNull RelativeLayout rootView, @NonNull FloatingActionButton fabAtm,
-      @NonNull FloatingActionMenu fabMenu, @NonNull FloatingActionButton fabRestaurant) {
+      @NonNull FloatingActionMenu fabMenu, @NonNull FloatingActionButton fabRestaurant,
+      @NonNull RelativeLayout fragmentMap) {
     this.rootView = rootView;
     this.fabAtm = fabAtm;
     this.fabMenu = fabMenu;
     this.fabRestaurant = fabRestaurant;
+    this.fragmentMap = fragmentMap;
   }
 
   @Override
@@ -82,7 +87,10 @@ public final class FragmentMapBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentMapBinding((RelativeLayout) rootView, fabAtm, fabMenu, fabRestaurant);
+      RelativeLayout fragmentMap = (RelativeLayout) rootView;
+
+      return new FragmentMapBinding((RelativeLayout) rootView, fabAtm, fabMenu, fabRestaurant,
+          fragmentMap);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

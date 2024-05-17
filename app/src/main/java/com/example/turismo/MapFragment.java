@@ -107,6 +107,23 @@ public class MapFragment extends Fragment {
                     myMap = googleMap;
                     setupMap();
                     setupSearchView(view);
+
+                    // Check if there are any member locations to display
+
+
+                    Bundle args = getArguments();
+                    if (args != null) {
+                        Log.d("COKE", "COKE");
+                        ArrayList<UserLocation> userLocations = args.getParcelableArrayList("userLocations");
+                        if (userLocations != null && !userLocations.isEmpty()) {
+                            Log.d("HOPE", "HOPE");
+                            showMembersLocation(userLocations);
+                        }
+                        else
+                        {
+                            Log.d("COKE", "COKE");
+                        }
+                    }
                 }
             });
         }
@@ -482,13 +499,14 @@ public class MapFragment extends Fragment {
         FirebaseAuth auth = FirebaseAuth.getInstance();
         if (auth.getCurrentUser() != null) {
             String userId = auth.getCurrentUser().getUid();
-            GeoPoint geoPoint = new GeoPoint(location.getLatitude(), location.getLongitude());
+            String locationString = location.getLatitude() + "," + location.getLongitude();
             firestore.collection("users").document(userId)
-                    .update("location", geoPoint)
+                    .update("location", locationString)
                     .addOnSuccessListener(aVoid -> Log.d("MapFragment", "Location updated successfully"))
                     .addOnFailureListener(e -> Log.e("MapFragment", "Failed to update location", e));
         }
     }
+
 
     @Override
     public void onDestroyView() {

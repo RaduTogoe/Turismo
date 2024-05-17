@@ -3,29 +3,38 @@ package com.example.turismo;
 import android.os.Bundle;
 import android.util.Log;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-import androidx.fragment.app.*;
+import androidx.fragment.app.Fragment;
 import com.example.turismo.databinding.ActivityMapBinding;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MapActivity extends AppCompatActivity implements LocationBottomSheetFragment.OnLocationAddedListener {
-    ActivityMapBinding binding;
+    private ActivityMapBinding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityMapBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        replaceFragment(new MapFragment());
+
+        // Check if the activity was started with member locations to display
+        List<UserLocation> userLocations = LocationDataStore.getInstance().getUserLocations();
+        if (userLocations != null && !userLocations.isEmpty()) {
+            MapFragment mapFragment = new MapFragment();
+            Bundle args = new Bundle();
+            Log.d("ACTIVITY", "ACTIVITY");
+            args.putParcelableArrayList("userLocations", new ArrayList<>(userLocations));
+            mapFragment.setArguments(args);
+            replaceFragment(mapFragment);
+        } else {
+            replaceFragment(new MapFragment());
+        }
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
-            //Log.e("CCCCCCC", "CCCCCCCC");
             if (item.getItemId() == R.id.mapItem) {
                 replaceFragment(new MapFragment());
             } else if (item.getItemId() == R.id.accountItem) {
-                //Log.e("BBBBBBBBBBBBBBBB", "BBBBBBBBBBBBBBBB");
                 replaceFragment(new AccountFragment());
             } else if (item.getItemId() == R.id.groupItem) {
                 replaceFragment(new GroupFragment());
@@ -36,17 +45,15 @@ public class MapActivity extends AppCompatActivity implements LocationBottomShee
         });
     }
 
-    private void replaceFragment(Fragment f) {
-        //Log.d("AAAAAAAAAAA", "IT CALLS");
+    private void replaceFragment(Fragment fragment) {
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.main_frame, f, null)
+                .replace(R.id.main_frame, fragment)
                 .addToBackStack("fragmentTransaction")
                 .commit();
     }
 
     @Override
     public void onLocationAdded(String name, double lat, double lng) {
-        // Pass the data to CalendarFragment
         CalendarFragment calendarFragment = (CalendarFragment) getSupportFragmentManager().findFragmentByTag("CALENDAR_FRAGMENT_TAG");
         if (calendarFragment != null) {
             calendarFragment.addLocation(name, lat, lng);
