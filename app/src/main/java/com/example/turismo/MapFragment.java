@@ -157,10 +157,13 @@ public class MapFragment extends Fragment {
 
             // Set up click listener to show BottomSheet
             myMap.setOnMarkerClickListener(marker -> {
-                String s = (String) marker.getTag();
-                if (s != null && s.charAt(0) == '@') {
-                    Toast.makeText(requireContext(), "Username: " + s.substring(1), Toast.LENGTH_SHORT).show();
-                return true;
+                if (marker.getTag() instanceof  String) {
+                    String s = (String) marker.getTag();
+
+                    if (s != null && s.charAt(0) == '@') {
+                        Toast.makeText(requireContext(), "Username: " + s.substring(1), Toast.LENGTH_SHORT).show();
+                        return true;
+                    }
                 }
 
                 PlaceResult placeResult = (PlaceResult) marker.getTag();
