@@ -16,7 +16,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -42,9 +41,12 @@ public class AuthentificationMenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.authentification_menu);
 
-        FirebaseApp.initializeApp(this);
+
         firebaseAuth = FirebaseAuth.getInstance();
         firestore = FirebaseFirestore.getInstance();
+
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
         sharedPreferences = getSharedPreferences("loginPrefs", MODE_PRIVATE);
 
 
@@ -56,26 +58,16 @@ public class AuthentificationMenuActivity extends AppCompatActivity {
         rememberMeCheckbox = findViewById(R.id.rememberMe);
 
 
-        String savedEmailOrUsername = sharedPreferences.getString("emailOrUsername", "");
+        String savedEmailOrUsername = sharedPreferences.getString("email", "");
         String savedPassword = sharedPreferences.getString("password", "");
         if (!savedEmailOrUsername.isEmpty()) {
             emailOrUsernameField.setText(savedEmailOrUsername);
             passwordField.setText(savedPassword);
-            loginUser();
-            loginUser(savedEmailOrUsername, savedPassword);
-        }
-        boolean rememberMe = sharedPreferences.getBoolean("rememberMe", false);
-        if (rememberMe) {
-
-            // Auto-fill the email/username and password fields
-            emailOrUsernameField.setText(savedEmailOrUsername);
-            passwordField.setText(savedPassword);
-
-            // Perform auto-login
             loginUser(savedEmailOrUsername, savedPassword);
         }
 
-        // Set click listener for the login button
+
+
         loginButton.setOnClickListener(v -> loginUser(emailOrUsernameField.getText().toString().trim(), passwordField.getText().toString().trim()));
 
         forgotPassword.setOnClickListener(v -> startActivity(new Intent(AuthentificationMenuActivity.this, SendEmailForgotPassword.class)));
@@ -90,6 +82,13 @@ public class AuthentificationMenuActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             handleLoginResult(task);
+                            if(rememberMeCheckbox.isChecked()){
+                                getSharedPreferences("loginPrefs",MODE_PRIVATE)
+                                        .edit()
+                                        .putString("email",emailOrUsername)
+                                        .putString("password", password)
+                                        .apply();
+                            }
                         }
                     });}else{
             Toast.makeText(getApplicationContext(),"Please fill both fields",Toast.LENGTH_SHORT).show();
@@ -132,7 +131,16 @@ public class AuthentificationMenuActivity extends AppCompatActivity {
                                         .addOnCompleteListener(AuthentificationMenuActivity.this, new OnCompleteListener<AuthResult>() {
                                             @Override
                                             public void onComplete(@NonNull Task<AuthResult> task) {
+
                                                 handleLoginResult(task);
+                                                if(rememberMeCheckbox.isChecked()){
+                                                    getSharedPreferences("loginPrefs",MODE_PRIVATE)
+                                                            .edit()
+                                                            .putString("email",email)
+                                                            .putString("password", password)
+                                                            .apply();
+                                                }
+
                                             }
                                         });
                             } else {
@@ -149,6 +157,7 @@ public class AuthentificationMenuActivity extends AppCompatActivity {
             FirebaseUser user = firebaseAuth.getCurrentUser();
             if (user != null && user.isEmailVerified()) {
                 // User is verified, proceed to main activity
+
                 Toast.makeText(AuthentificationMenuActivity.this, "Login successful!", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(AuthentificationMenuActivity.this, MapActivity.class));
                 finish();
