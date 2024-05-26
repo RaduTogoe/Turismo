@@ -60,10 +60,11 @@ public class AuthentificationMenuActivity extends AppCompatActivity {
 
         String savedEmailOrUsername = sharedPreferences.getString("email", "");
         String savedPassword = sharedPreferences.getString("password", "");
+        if(!sharedPreferences.getString("email", "").equals("1")){
         if (!savedEmailOrUsername.isEmpty()) {
             emailOrUsernameField.setText(savedEmailOrUsername);
             passwordField.setText(savedPassword);
-            loginUser(savedEmailOrUsername, savedPassword);
+            loginUser(savedEmailOrUsername, savedPassword);}
         }
 
 

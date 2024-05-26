@@ -2,6 +2,7 @@ package com.example.turismo;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
@@ -12,7 +13,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -95,7 +95,15 @@ public class ChatActivity extends AppCompatActivity implements GroupSettingsDial
                 Toast.makeText(ChatActivity.this, "Cannot send an empty message", Toast.LENGTH_SHORT).show();
             }
         });
-
+        messageEditText.setOnKeyListener(new View.OnKeyListener(){
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if((event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER)){
+                    sendMessage(messageEditText.getText().toString().trim());
+                return true;}
+                return false;
+            }
+        });
         loadGroupDetails();
     }
 

@@ -1,6 +1,8 @@
 package com.example.turismo;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.LayoutInflater;
@@ -25,6 +27,8 @@ public class AccountFragment extends Fragment {
     private FirebaseAuth firebaseAuth;
     private FirebaseFirestore firestore;
     private FirebaseUser currentUser;
+    private SharedPreferences sharedPreferences;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -37,8 +41,6 @@ public class AccountFragment extends Fragment {
         FirebaseDatabase db = FirebaseDatabase.getInstance();
         DatabaseReference dbref = db.getReference();
         DatabaseReference imgref = dbref.child("image");
-
-
         // Find views by ID
         usernameEditText = view.findViewById(R.id.nameField);
         emailEditText = view.findViewById(R.id.emailField);
@@ -115,11 +117,11 @@ public class AccountFragment extends Fragment {
                                 passwordEditText.setText("");
                                 confirmPassword.setText("");
                                 Toast.makeText(getContext(), "Passwords changed succesfully: ", Toast.LENGTH_SHORT).show();
-                            }else{
+                            } else {
                                 Toast.makeText(getContext(), "Password change failed.", Toast.LENGTH_SHORT).show();
                             }
                         });
-            }else if(!newPassword.isEmpty()){
+            } else if (!newPassword.isEmpty()) {
                 Toast.makeText(getContext(), "Passwords don't match", Toast.LENGTH_SHORT).show();
             }
             if (!username.equals(newUsername))
@@ -147,16 +149,21 @@ public class AccountFragment extends Fragment {
         });
 
 
-
     }
 
 
     private void disconnect() {
 
         firebaseAuth.signOut();
-
         Intent intent = new Intent(getContext(), AuthentificationMenuActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        getContext().getSharedPreferences("loginPrefs", Context.MODE_PRIVATE)
+                .edit()
+                .putString("email", "1")
+                .putString("password", "0")
+                .apply();
+        ;
+
         startActivity(intent);
     }
 
